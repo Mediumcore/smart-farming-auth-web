@@ -28,7 +28,7 @@
       </el-table-column>
       <el-table-column label="访问地址" min-width="200">
         <template slot-scope="scope">
-          {{ scope.row.url }}
+            <el-link type="primary" :href="scope.row.url">{{ scope.row.url }}</el-link>
         </template>
       </el-table-column>
 
